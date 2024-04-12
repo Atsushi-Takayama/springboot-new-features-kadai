@@ -85,3 +85,17 @@ INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_d
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (9, 9, 1, '2023-04-01', '2023-04-02', 5, 9000);
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (10, 10, 1, '2023-04-01', '2023-04-02', 6, 10000);
 INSERT IGNORE INTO reservations (id, house_id, user_id, checkin_date, checkout_date, number_of_people, amount) VALUES (11, 11, 1, '2023-04-01', '2023-04-02', 2, 6000);
+
+-- reviewsテーブル
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (1,1,1,1,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (2,1,2,4,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (3,1,3,5,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (4,1,4,3,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (5,1,5,4,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (6,1,6,3,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (7,1,7,5,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (8,1,8,3,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (9,1,9,5,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (10,1,10,4,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (11,1,11,3,'初めて利用しましたが、とても快適でした。');
+INSERT IGNORE INTO reviews (id, house_id, user_id, star, review) VALUES (12,1,12,4,'初めて利用しましたが、とても快適でした。');

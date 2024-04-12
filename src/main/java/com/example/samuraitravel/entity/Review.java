@@ -7,41 +7,33 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "houses")
+@Table(name = "reviews")
 @Data
-public class House {
+public class Review {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private Integer id;
 
-	@Column(name = "name")
-	private String name;
+	@ManyToOne
+	@JoinColumn(name = "house_id")
+	private House house;
 
-	@Column(name = "image_name")
-	private String imageName;
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
 
-	@Column(name = "description")
-	private String description;
+	@Column(name = "star")
+	private String star;
 
-	@Column(name = "price")
-	private Integer price;
-
-	@Column(name = "capacity")
-	private Integer capacity;
-
-	@Column(name = "postal_code")
-	private String postalCode;
-
-	@Column(name = "address")
-	private String address;
-
-	@Column(name = "phone_number")
-	private String phoneNumber;
+	@Column(name = "review")
+	private String review;
 
 	@Column(name = "created_at", insertable = false, updatable = false)
 	private Timestamp createdAt;

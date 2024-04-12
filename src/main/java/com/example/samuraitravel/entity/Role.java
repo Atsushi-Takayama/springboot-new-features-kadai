@@ -1,4 +1,5 @@
 package com.example.samuraitravel.entity;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,11 +12,11 @@ import lombok.Data;
 @Table(name = "roles")
 @Data
 public class Role {
-   @Id
-   @GeneratedValue(strategy = GenerationType.IDENTITY)
-   @Column(name = "id")
-   private Integer id;
-   
-   @Column(name = "name")
-   private String name;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private Integer id;
+
+	@Column(name = "name")
+	private String name;
 }
